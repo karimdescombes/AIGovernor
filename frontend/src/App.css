@@ -65,3 +65,30 @@
 .cta-button:hover {
   opacity: 0.9;
 }
+
+/* Navigation */
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Page */
+.dashboard {
+  padding: 2rem;
+}
+.dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+.dashboard li {
+  margin-bottom: 0.5rem;
+}
