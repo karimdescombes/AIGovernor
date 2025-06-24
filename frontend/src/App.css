@@ -1,0 +1,67 @@
+/* Layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background: #0b1523; /* dark navy to match your branding */
+  color: #fff;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.title-group h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* Main content */
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-main h2 {
+  margin-bottom: 1rem;
+}
+
+.app-main p {
+  max-width: 500px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #00b8d4;      /* teal-ish accent */
+  color: #0b1523;           /* dark text */
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.cta-button:hover {
+  opacity: 0.9;
+}
