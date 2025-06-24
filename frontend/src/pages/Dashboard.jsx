@@ -16,7 +16,12 @@ const metrics = {
   ],
   costOptimization: [
     { label: 'Resources scanned', value: 133, status: 'ok' },
-    { label: 'Savings achieved', value: '$1,500', status: 'ok' },
+    {
+      label: 'Savings achieved',
+      value: 1500,
+      currency: 'GBP',
+      status: 'ok',
+    },
   ],
 };
 
@@ -26,13 +31,20 @@ function StatusDot({ status }) {
 }
 
 function MetricTile({ metric, color }) {
+  const displayValue = metric.currency
+    ? new Intl.NumberFormat('en-GB', {
+        style: 'currency',
+        currency: metric.currency,
+        maximumFractionDigits: 0,
+      }).format(metric.value)
+    : metric.value;
   return (
     <div className={`bg-${color}-600 text-white p-4 rounded-lg shadow flex flex-col gap-1`}>
       <div className="flex items-center justify-between text-sm font-medium">
         <span>{metric.label}</span>
         {metric.status && <StatusDot status={metric.status} />}
       </div>
-      <div className="text-xl font-bold">{metric.value}</div>
+      <div className="text-xl font-bold">{displayValue}</div>
     </div>
   );
 }
