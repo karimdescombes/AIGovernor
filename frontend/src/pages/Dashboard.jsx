@@ -12,7 +12,7 @@ const metrics = {
   ],
   aiOversight: [
     { label: 'Policy violations', value: 3, status: 'warning' },
-    { label: 'Last audit', value: '2023-09-01', status: 'ok' },
+    { label: 'Last audit', value: '2025-03-29', status: 'ok' },
   ],
   costOptimization: [
     { label: 'Resources scanned', value: 133, status: 'ok' },
